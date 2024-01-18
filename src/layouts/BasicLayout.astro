@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { title, description, page } = Astro.props;
+// Arreglar ersto
 const image =
   page === "travel"
     ? `${Astro.url.origin}/globe_preview.webp"`
@@ -82,5 +83,19 @@ const image =
 
   b {
     font-weight: 700 !important;
+  }
+  @keyframes loadImage {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .imagen {
+    animation: loadImage 400ms ease-in-out;
+  }
+  .texto-principal {
+    font-family: "Satoshi";
   }
 </style>

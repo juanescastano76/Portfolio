@@ -1,0 +1,200 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostRow from "../../components/Blog/PostRow.astro";
+import Card from "../../components/Card/index.astro";
+---
+
+<script>
+  import { timeline, type TimelineDefinition } from "motion";
+  import { loaderAnimation } from "../../lib/constants";
+
+  const sequence = [loaderAnimation];
+
+  timeline(sequence as TimelineDefinition);
+</script>
+
+<Layout
+  title="Juan Gaviria - Portfolio"
+  description="Software developer with strong focus on the user experience animations and micro interactions"
+>
+  <main
+    class="w-screen h-screen flex flex-col justify-start items-start max-w-4xl mx-auto p-8"
+  >
+    <a
+      href="/"
+      class="text-white bg-neutral-900 hover:bg-neutral-800 px-4 py-2 mb-8 border-1 border-solid border-neutral-600 rounded-lg"
+      >Back</a
+    >
+    <h1 class="text-4xl font-bold mb-4 text-neutral-100">Posts</h1>
+    <ul class="w-full h-full">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-5 pb-5"
+      >
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/ElevalinkAdmin.jpg"
+              alt="Elevalink Administrador menus"
+              class="w-full max-h-46 aspect-video"
+              style="object-fit: center; "
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold capitalize">
+                Digital menu administrator
+              </h2>
+              <p class="text-sm">
+                Menu administrator designed and developed for Elevalink
+              </p>
+            </div>
+            <p class="text-white">
+              This web application was designed using the following
+              technologies: Next.js, Cloud Firestore, Firebase Authentication,
+              Tailwind, and React Redux.
+              <br />
+               The main function of the application is to enable real-time
+              changes to menu products, including modifications to images,
+              prices, titles, and descriptions in both Spanish and English.
+            </p>
+          </Card>
+        </div>
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/essential.jpg"
+              alt="Project 1"
+              class="md:w-full md:h-46"
+              style="object-fit: center;"
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold capitalize">
+                Essential Herbs Ecommerce
+              </h2>
+              <p class="text-sm">
+                Ecommerce designed and developed for Essential Herbs
+              </p>
+            </div>
+            <p class="text-white">
+              This web application was designed using the following
+              technologies: Nextjs, MongoDb, Firebase Authentication, Tailwind,
+              Zustand and the MercadoPago gateway payment.
+              <br />
+               This web application save the orders in the MongoDb database and
+              sends realtime confirmation emails to the client and the Ecommerce
+              owner
+            </p>
+          </Card>
+        </div>
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/HahausEcommerce.jpg"
+              alt="Project 1"
+              class="w-full max-h-46 aspect-video"
+              style="object-fit: center;"
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold">Hahaus Ecommerce</h2>
+              <p class="text-sm">Ecommerce designed and developed for Hahaus</p>
+            </div>
+            <p class="text-white">
+              This web application was designed using the following
+              technologies: React, Nodejs, Tailwind, Firebase, Zustand and the
+              MercadoPago gateway payment.
+            </p>
+          </Card>
+        </div>
+
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/readingHelper.jpg"
+              alt="Project 1"
+              class="w-full  max-h-46 aspect-video"
+              style="object-fit: center;"
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold">Reading Helper</h2>
+              <p class="text-sm">Multiple reading methods</p>
+            </div>
+            <p class="text-white">
+              This webpage was designed using React and CSS modules. It enables
+              users to employ various reading methods, facilitating an easy
+              reading experience
+            </p>
+          </Card>
+        </div>
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/bikecitymenu.jpg"
+              alt="Project 1"
+              class="w-full h-46"
+              style="object-fit: center;"
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold">Bikecity Menu</h2>
+              <p class="text-sm">
+                Digital menu designed and developed for Bikecity
+              </p>
+            </div>
+            <p class="text-white">
+              This webpage was crafted with HTML5, CSS, and vanilla JavaScript.
+              It enables users to interact with the menu in a more efficient and
+              speedy manner.
+            </p>
+          </Card>
+        </div>
+
+        <div class="group relative rounded-lg">
+          <Card>
+            <img
+              src="/public/depositoPorvenir.jpg"
+              alt="Project 1"
+              class="w-full h-46"
+              style="object-fit: center;"
+            />
+
+            <div
+              class="absolute inset-0 opacity-50 group-hover:opacity-75 transition-opacity"
+            >
+            </div>
+            <div class="bottom-0 left-0 m-4 text-white">
+              <h2 class="text-lg font-semibold">Deposito Porvenir</h2>
+              <p class="text-sm">Landing page designed for Deposito Porvenir</p>
+            </div>
+            <p class="text-white">
+              This webpage was crafted with HTML5, Bootstrap, and vanilla
+              JavaScript. The primary focus of this webpage is to provide
+              information.
+            </p>
+          </Card>
+        </div>
+      </main>
+    </ul>
+  </main>
+</Layout>
