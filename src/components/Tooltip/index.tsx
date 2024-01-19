@@ -90,12 +90,11 @@ function Tooltip(props: Props) {
         {autodestrucion() ? (
           <>
             <img
-              src="/public/giphy.gif"
+              src="/giphy.gif"
               class="w-[100%] h-[100%]  absolute left-0 top-0 z-[1000] text-center flex justify-center 2s ease-in-out imagen "
             ></img>
           </>
         ) : null}
-        {/* Antes no estaba este div adicional borrar si algo se rompe */}
       </div>
     </div>
   );
