@@ -1,5 +1,5 @@
 export const LINKS = {
-  github: "https://github.com/Ladvace",
+  github: "https://github.com/juanescastano76",
   linkedin:
     "https://www.linkedin.com/in/juan-esteban-casta%C3%B1o-gaviria-005b55266/",
   email: "juancastangaviria@gmail.com",
